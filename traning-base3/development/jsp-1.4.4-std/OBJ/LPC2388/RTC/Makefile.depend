@@ -1,0 +1,481 @@
+kernel_cfg.c kernel_id.h kernel_chk.c: \
+	../../../config/armv4/tool_defs.h \
+	../../../config/armv4/tool_config.h \
+	../../../pdic/rtc/rtc.cfg ../../../include/t_stddef.h \
+	../../../config/armv4/lpc2388/lpc23xx.h \
+	../../../config/armv4/cpu_rename.h \
+	../../../include/t_services.h \
+	../../../pdic/rtc/lpc23xx_rtc.h sample1.h \
+	../../../config/armv4/cpu_config.h \
+	../../../systask/timer.cfg ../../../config/armv4/armv4.h \
+	../../../monitor/monitor.cfg ../../../include/t_syslog.h \
+	../../../include/itron.h ../../../include/t_config.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	../../../config/armv4/lpc2388/hw_timer.h \
+	../../../include/s_services.h ../../../include/kernel.h \
+	../../../config/armv4/cpu_defs.h sample1.cfg \
+	../../../systask/logtask.cfg \
+	../../../config/armv4/lpc2388/hw_serial.cfg \
+	../../../config/armv4/lpc2388/sys_config.h \
+	../../../systask/serial.cfg ../../../include/sil.h \
+	../../../config/armv4/lpc2388/sys_rename.h 
+kernel_chk.s: ../../../kernel/queue.h \
+	../../../config/armv4/tool_defs.h \
+	../../../config/armv4/tool_config.h \
+	../../../include/t_stddef.h ../../../include/logtask.h \
+	../../../config/armv4/cpu_rename.h ../../../kernel/mempfix.h \
+	../../../kernel/semaphore.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	../../../kernel/dataqueue.h kernel_chk.c \
+	../../../kernel/jsp_rename.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	../../../config/armv4/lpc2388/sys_config.h \
+	../../../include/sil.h ../../../kernel/task.h \
+	../../../config/armv4/lpc2388/sys_rename.h \
+	../../../kernel/interrupt.h \
+	../../../include/../kernel/exception.h \
+	../../../config/armv4/lpc2388/lpc23xx.h \
+	../../../kernel/wait.h ../../../kernel/time_event.h \
+	../../../config/armv4/cpu_config.h \
+	../../../config/armv4/armv4.h ../../../include/itron.h \
+	../../../include/t_syslog.h ../../../include/t_config.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	../../../kernel/mailbox.h ../../../kernel/eventflag.h \
+	../../../kernel/cyclic.h ../../../config/armv4/cpu_defs.h \
+	../../../include/kernel.h ../../../kernel/jsp_kernel.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	../../../config/armv4/cpu_insn.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	../../../include/timer.h 
+start.o: ../../../include/t_config.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	../../../config/armv4/tool_config.h \
+	../../../config/armv4/lpc2388/lpc23xx.h \
+	../../../config/armv4/cpu_rename.h \
+	../../../config/armv4/start.S \
+	../../../config/armv4/lpc2388/sys_config.h \
+	../../../config/armv4/cpu_config.h \
+	../../../config/armv4/armv4.h \
+	../../../config/armv4/lpc2388/sys_rename.h 
+sample1.o: ../../../config/armv4/tool_defs.h \
+	../../../include/t_stddef.h ../../../include/serial.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/time.h \
+	sample1.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stdarg.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/config.h \
+	../../../config/armv4/lpc2388/board_config.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/time.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	../../../include/sil.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/reent.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/types.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/lock.h \
+	../../../include/t_services.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/types.h \
+	../../../pdic/rtc/lpc23xx_rtc.h ../../../include/itron.h \
+	../../../include/t_syslog.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/_types.h \
+	../../../config/armv4/lpc2388/sys_defs.h sample1.c \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/features.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/_types.h \
+	../../../config/armv4/cpu_defs.h ../../../include/kernel.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/_ansi.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/ieeefp.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	kernel_id.h ../../../monitor/stdio.h 
+clock.o: ../../../config/armv4/tool_defs.h \
+	../../../include/t_stddef.h clock.c \
+	../../../include/serial.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/time.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	../../../monitor/monitor.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stdarg.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/config.h \
+	../../../config/armv4/lpc2388/board_config.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/time.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	../../../include/sil.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/reent.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/types.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/lock.h \
+	../../../include/t_services.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/types.h \
+	../../../include/itron.h ../../../include/t_syslog.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/_types.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/features.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/_types.h \
+	../../../config/armv4/cpu_defs.h ../../../include/kernel.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/_ansi.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/ieeefp.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	kernel_id.h ../../../monitor/stdio.h 
+task_expansion.o: ../../../kernel/queue.h \
+	../../../config/armv4/tool_defs.h \
+	../../../config/armv4/tool_config.h \
+	../../../include/t_stddef.h ../../../include/serial.h \
+	../../../config/armv4/cpu_rename.h ./kernel_id.h \
+	../../../kernel/semaphore.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	../../../include/kernel_debug.h ../../../kernel/dataqueue.h \
+	../../../kernel/check.h ../../../kernel/jsp_rename.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	../../../config/armv4/lpc2388/sys_config.h \
+	../../../include/sil.h ../../../kernel/task.h \
+	../../../config/armv4/lpc2388/sys_rename.h \
+	../../../config/armv4/lpc2388/lpc23xx.h \
+	../../../kernel/wait.h ../../../include/t_services.h \
+	../../../kernel/time_event.h \
+	../../../monitor/task_expansion.c \
+	../../../config/armv4/cpu_config.h \
+	../../../config/armv4/armv4.h ../../../include/itron.h \
+	../../../include/t_syslog.h ../../../include/t_config.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	../../../config/armv4/lpc2388/hw_timer.h \
+	../../../include/s_services.h \
+	../../../monitor/task_expansion.h \
+	../../../config/armv4/cpu_defs.h ../../../include/kernel.h \
+	../../../kernel/jsp_kernel.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	../../../config/armv4/cpu_insn.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h 
+monitor.o: ../../../kernel/queue.h ../../../config/armv4/tool_defs.h \
+	../../../config/armv4/tool_config.h \
+	../../../include/t_stddef.h ../../../include/logtask.h \
+	../../../include/serial.h ../../../config/armv4/cpu_rename.h \
+	./kernel_id.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	../../../monitor/monitor.h ../../../include/kernel_debug.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stdarg.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/config.h \
+	../../../kernel/jsp_rename.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	../../../config/armv4/lpc2388/sys_config.h \
+	../../../include/sil.h ../../../kernel/task.h \
+	../../../config/armv4/lpc2388/sys_rename.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/types.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/lock.h \
+	../../../monitor/monitor.c \
+	../../../config/armv4/lpc2388/lpc23xx.h \
+	../../../include/t_services.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/types.h \
+	../../../kernel/time_event.h \
+	../../../config/armv4/cpu_config.h \
+	../../../config/armv4/armv4.h ../../../include/itron.h \
+	../../../include/t_syslog.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/_types.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	../../../include/t_config.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/features.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/_types.h \
+	../../../monitor/task_expansion.h \
+	../../../config/armv4/cpu_defs.h ../../../include/kernel.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	../../../kernel/jsp_kernel.h \
+	../../../config/armv4/cpu_insn.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/_ansi.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/ieeefp.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	../../../monitor/stdio.h 
+stddev.o: ../../../config/armv4/tool_defs.h \
+	../../../config/armv4/tool_config.h \
+	../../../include/t_stddef.h ../../../include/serial.h \
+	../../../config/armv4/cpu_rename.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stdarg.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/config.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	../../../config/armv4/lpc2388/sys_config.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/string.h \
+	../../../include/sil.h \
+	../../../config/armv4/lpc2388/sys_rename.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/reent.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/types.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/lock.h \
+	../../../config/armv4/lpc2388/lpc23xx.h \
+	../../../include/t_services.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/types.h \
+	../../../config/armv4/cpu_config.h \
+	../../../config/armv4/armv4.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/_types.h \
+	../../../include/itron.h ../../../include/t_syslog.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	../../../include/t_config.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/string.h \
+	../../../monitor/stdio/stddev.c \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/features.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/_types.h \
+	../../../include/s_services.h \
+	../../../config/armv4/cpu_defs.h ../../../include/kernel.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	../../../config/armv4/cpu_insn.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/_ansi.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/ieeefp.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	../../../monitor/stdio.h 
+printf.o: ../../../config/armv4/tool_defs.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/types.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/lock.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/types.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/_types.h \
+	../../../include/itron.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stdarg.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/config.h \
+	../../../monitor/stdio/printf.c \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/features.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/_types.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/_ansi.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/ieeefp.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	../../../monitor/stdio.h 
+sprintf.o: ../../../monitor/stdio/sprintf.c \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stdarg.h 
+scanf.o: \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/types.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/lock.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/types.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/_types.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stdarg.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/config.h \
+	../../../monitor/stdio/scanf.c \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/features.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/_types.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/_ansi.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/ieeefp.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	../../../monitor/stdio.h 
+sscanf.o: ../../../monitor/stdio/sscanf.c \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stdarg.h 
+timer.o: ../../../config/armv4/tool_defs.h \
+	../../../config/armv4/tool_config.h \
+	../../../include/t_stddef.h \
+	../../../config/armv4/lpc2388/lpc23xx.h \
+	../../../include/serial.h ../../../config/armv4/cpu_rename.h \
+	../../../include/t_services.h \
+	../../../config/armv4/cpu_config.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	../../../config/armv4/armv4.h ../../../include/t_syslog.h \
+	../../../include/itron.h ../../../include/t_config.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	../../../systask/timer.c \
+	../../../config/armv4/lpc2388/hw_timer.h \
+	../../../include/s_services.h ../../../include/kernel.h \
+	../../../config/armv4/cpu_defs.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	../../../config/armv4/cpu_insn.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	../../../config/armv4/lpc2388/sys_config.h \
+	../../../include/sil.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	../../../include/timer.h \
+	../../../config/armv4/lpc2388/sys_rename.h 
+serial.o: ../../../config/armv4/tool_defs.h \
+	../../../include/t_stddef.h ../../../systask/serial.c \
+	../../../config/armv4/lpc2388/lpc23xx.h \
+	../../../include/serial.h ../../../config/armv4/cpu_rename.h \
+	../../../include/t_services.h ./kernel_id.h \
+	../../../config/armv4/cpu_config.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	../../../config/armv4/armv4.h ../../../include/t_syslog.h \
+	../../../include/itron.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	../../../include/kernel.h ../../../config/armv4/cpu_defs.h \
+	../../../config/armv4/lpc2388/hw_serial.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	../../../config/armv4/cpu_insn.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	../../../config/armv4/lpc2388/sys_config.h \
+	../../../include/sil.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	../../../config/armv4/lpc2388/sys_rename.h 
+logtask.o: ../../../config/armv4/tool_defs.h \
+	../../../config/armv4/tool_config.h \
+	../../../include/t_stddef.h ../../../include/logtask.h \
+	../../../config/armv4/lpc2388/lpc23xx.h \
+	../../../include/serial.h ../../../config/armv4/cpu_rename.h \
+	../../../include/t_services.h ../../../systask/logtask.c \
+	../../../config/armv4/cpu_config.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	../../../config/armv4/armv4.h ../../../include/t_syslog.h \
+	../../../include/itron.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	../../../include/t_config.h ../../../include/kernel.h \
+	../../../config/armv4/cpu_defs.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	../../../config/armv4/cpu_insn.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	../../../config/armv4/lpc2388/sys_config.h \
+	../../../include/sil.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	../../../config/armv4/lpc2388/sys_rename.h 
+log_output.o: ../../../config/armv4/lpc2388/sys_defs.h \
+	../../../config/armv4/tool_defs.h \
+	../../../include/t_stddef.h ../../../library/log_output.c \
+	../../../config/armv4/cpu_defs.h ../../../include/kernel.h \
+	../../../include/serial.h ../../../include/t_services.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	../../../include/t_syslog.h ../../../include/itron.h 
+vasyslog.o: ../../../config/armv4/tool_defs.h \
+	../../../include/t_stddef.h ../../../library/vasyslog.c \
+	../../../include/serial.h ../../../include/t_services.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stdarg.h \
+	../../../include/t_syslog.h ../../../include/itron.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	../../../include/kernel.h ../../../config/armv4/cpu_defs.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h 
+t_perror.o: ../../../config/armv4/lpc2388/sys_defs.h \
+	../../../config/armv4/tool_defs.h \
+	../../../library/t_perror.c ../../../include/t_stddef.h \
+	../../../config/armv4/cpu_defs.h ../../../include/kernel.h \
+	../../../include/serial.h ../../../include/t_services.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	../../../include/t_syslog.h ../../../include/itron.h 
+strerror.o: ../../../config/armv4/lpc2388/sys_defs.h \
+	../../../config/armv4/tool_defs.h \
+	../../../include/t_stddef.h ../../../config/armv4/cpu_defs.h \
+	../../../include/kernel.h ../../../include/serial.h \
+	../../../include/t_services.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	../../../library/strerror.c \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	../../../include/t_syslog.h ../../../include/itron.h 
+lpc23xx_rtc.o: ../../../config/armv4/tool_defs.h \
+	../../../config/armv4/tool_config.h \
+	../../../include/t_stddef.h \
+	../../../config/armv4/lpc2388/lpc23xx.h \
+	../../../include/serial.h ../../../config/armv4/cpu_rename.h \
+	../../../include/t_services.h \
+	../../../pdic/rtc/lpc23xx_rtc.h ./kernel_id.h \
+	../../../config/armv4/cpu_config.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	../../../config/armv4/armv4.h ../../../include/t_syslog.h \
+	../../../include/itron.h ../../../include/t_config.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	../../../include/s_services.h \
+	../../../pdic/rtc/lpc23xx_rtc.c ../../../include/kernel.h \
+	../../../config/armv4/cpu_defs.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	../../../config/armv4/cpu_insn.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	../../../config/armv4/lpc2388/sys_config.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	../../../include/sil.h \
+	../../../config/armv4/lpc2388/sys_rename.h 
+armv4.o: ../../../kernel/queue.h ../../../config/armv4/tool_defs.h \
+	../../../config/armv4/tool_config.h \
+	../../../include/t_stddef.h ../../../include/serial.h \
+	../../../config/armv4/cpu_rename.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	../../../monitor/monitor.h ../../../include/kernel_debug.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stdarg.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/config.h \
+	../../../kernel/jsp_rename.h ../../../monitor/arch/armv4.c \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	../../../config/armv4/lpc2388/sys_config.h \
+	../../../include/sil.h ../../../kernel/task.h \
+	../../../config/armv4/lpc2388/sys_rename.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/types.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/lock.h \
+	../../../config/armv4/lpc2388/lpc23xx.h \
+	../../../include/t_services.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/types.h \
+	../../../kernel/time_event.h \
+	../../../config/armv4/cpu_config.h \
+	../../../config/armv4/armv4.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/_types.h \
+	../../../include/itron.h ../../../include/t_syslog.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	../../../include/t_config.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/sys/features.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/_types.h \
+	../../../include/s_services.h \
+	../../../monitor/task_expansion.h \
+	../../../config/armv4/cpu_defs.h ../../../include/kernel.h \
+	../../../kernel/jsp_kernel.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	../../../config/armv4/cpu_insn.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/_ansi.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/machine/ieeefp.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	../../../monitor/stdio.h 
+kernel_cfg.o: ../../../config/armv4/tool_defs.h \
+	../../../config/armv4/tool_config.h \
+	../../../include/t_stddef.h ../../../include/logtask.h \
+	../../../include/serial.h ../../../config/armv4/cpu_rename.h \
+	kernel_cfg.c sample1.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/limits.h \
+	../../../monitor/monitor.h \
+	../../../include/../kernel/jsp_unrename.h \
+	../../../include/../kernel/jsp_rename.h \
+	../../../config/armv4/cpu_unrename.h \
+	../../../include/../kernel/task.h \
+	../../../include/../kernel/mempfix.h \
+	../../../config/armv4/lpc2388/sys_unrename.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/stddef.h \
+	../../../config/armv4/lpc2388/sys_config.h \
+	../../../include/sil.h ../../../include/../kernel/mailbox.h \
+	../../../config/armv4/lpc2388/sys_rename.h \
+	../../../include/../kernel/semaphore.h \
+	../../../include/../kernel/dataqueue.h \
+	../../../include/../kernel/exception.h \
+	../../../config/armv4/lpc2388/lpc23xx.h \
+	../../../include/t_services.h \
+	../../../include/../kernel/time_event.h \
+	../../../pdic/rtc/lpc23xx_rtc.h \
+	../../../config/armv4/cpu_config.h \
+	../../../config/armv4/armv4.h ../../../include/itron.h \
+	../../../include/t_syslog.h \
+	../../../include/../kernel/cyclic.h \
+	../../../config/armv4/lpc2388/sys_defs.h \
+	../../../include/t_config.h \
+	../../../config/armv4/lpc2388/hw_timer.h \
+	../../../include/s_services.h \
+	../../../config/armv4/cpu_defs.h ../../../include/kernel.h \
+	../../../config/armv4/lpc2388/hw_serial.h \
+	../../../include/../kernel/interrupt.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/limits.h \
+	../../../config/armv4/cpu_insn.h \
+	../../../include/kernel_cfg.h \
+	../../../include/../kernel/jsp_kernel.h \
+	../../../include/../kernel/queue.h kernel_id.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/../../../../arm-elf/sys-include/newlib.h \
+	/usr/local/gnuarm/bin/../lib/gcc/arm-elf/4.0.2/include/syslimits.h \
+	../../../include/timer.h \
+	../../../include/../kernel/eventflag.h 

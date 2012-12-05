@@ -1,0 +1,113 @@
+
+1.名称を変更
+	echo.cfg -> telnet.cfg
+	echo.h   -> telnet.h
+	echo.c   -> telnet.c
+	tinet_echo.cfg -> tinet_telnet.cfg
+
+
+Makefile
+	UNAMEを変更(echos->telnet)
+	SRCDIRを変更(../jsp-1.4.4-std)
+	libkernelの位置を修正
+KERNEL_LIB = ../libkernel
+　->
+KERNEL_LIB = $(SRCDIR)/OBJ/LPC2388/libkernel
+
+
+telnet.cfg
+	echos.h -> telnet.hに修正２つ
+
+tinet_telnet.cfg
+	echos.h -> telnet.hに修正２つ
+
+telnet.c
+	echos.h -> telnet.hに修正１つ
+	ブロッキングモードのソースは不要なので削除
+
+定義名変更
+1)	_ECHOS_H_ -> _TELNET_H_
+	telnet.h
+
+2)	TCP_ECHO_SRV_TASK -> TCP_TELNET_SRV_TASK
+	telnet.cfg
+
+3)	TCP_ECHO_SRV_CEPID -> TCP_TELNET_SRV_CEPID
+	telnet.cfg
+	tinet_telnet.cfg
+
+4)	TCP_ECHO_SRV_MAIN_PRIORITY	-> TCP_TELNET_SRV_MAIN_PRIORITY
+	telnet.cfg
+	telnet.h
+
+5)	TCP_ECHO_SRV_STACK_SIZE -> TCP_TELNET_SRV_STACK_SIZE
+	telnet.cfg
+	telnet.h
+
+6)	SEM_TCP_ECHO_SRV_NBLK_READY -> SEM_TCP_TELNET_SRV_NBLK_READY
+	telnet.cfg
+	telnet.c
+
+7)	TCP_ECHO_SRV_SWBUF_SIZE -> TCP_TELNET_SRV_SWBUF_SIZE
+	tinet_telnet.cfg
+	telnet.c
+	telnet.h
+
+8)	TCP_ECHO_SRV_RWBUF_SIZE -> TCP_TELNET_SRV_RWBUF_SIZE
+	tinet_telnet.cfg
+	telnet.c
+	telnet.h
+
+9)	tcp_echo_srv_swbuf -> tcp_tinet_srv_swbuf
+	tinet_telnet.cfg
+	telnet.c
+	telnet.h
+
+10)	tcp_echo_srv_rwbuf -> tcp_tinet_srv_rwbuf
+	tinet_telnet.cfg
+	telnet.c
+	telnet.h
+
+11)	tcp_echo_srv_task -> tcp_telnet_srv_task
+	telnet.cfg
+	telnet.c
+	telnet.h
+
+12)	callback_nblk_tcp_echo_srv -> callback_nblk_tcp_telnet_srv
+	tinet_telnet.cfg
+	telnet.c
+	telnet.h
+
+13)	TCP_ECHO_SRV_REPID -> TCP_TELNET_SRV_REPID
+	tinet_telnet.cfg
+	telnet.c
+
+14)	USE_COPYSAVE_APIを有効に
+	telnet.h
+
+15)	コールバック関数の送受信セマフォを分離
+	telnet.cfg
+	telnet.c
+
+16)	ポート番号を23に変更
+	tinet_telnet.cfg
+
+17)	コネクションの状態が他のタスクから参照できるように修正
+	telnet.c
+
+18)	メインタスクを用意してdhcpはそちらで行うように修正
+	config.h
+	config.c
+	Makefile
+	tinet_telnet.cfg -> tinet_config.cfg
+
+19) dhcp/macaddr_initをconfig.cに移動
+	syslogのコメント　TCP ECHO SRV -> TCP TELNET SRV
+	config.c
+	telnet.c
+
+20) telnet オプションの対応
+
+21) telnet-optionの対応
+
+
