@@ -232,10 +232,17 @@ disk_read(BYTE Drive, BYTE* Buffer, DWORD SectorNumber, BYTE SectorCount)
 	if(psdev == NULL)
 		return RES_ERROR;
 
-	/* なんかチェックしている */
+	/*
+	 * _sd_init()を読んでみると,
+	 * pdic/mci/lpc23xx_mci.c 内で定義されている lpc23xx_mci_ini_por();の戻り値を代入している.
+	 * この関数は, lpc23xxのMCIペリフェラルの初期化をしているようで,成功すれば MCIPCMBのアドレスを返す.
+	 * つまり,初期化に失敗していた場合は NULL が入ることになっているので,ここで正常に初期化されているかチェックしているようだ.
+	 */
 	pmci = psdev->_sdev_local[1];
 
-	/* なんかチェックしている */
+	/*
+	 * StorageDeviceの属性をチェックしているのと,MCIが初期化されている事をチェックしている.
+	 */
 	if((psdev->_sdev_attribute & (SDEV_EMPLOY|SDEV_NOTUSE)) != SDEV_EMPLOY || pmci == NULL)
 		return RES_ERROR;
 
