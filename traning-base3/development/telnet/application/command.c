@@ -49,6 +49,7 @@ static int cmd_date(int argc, char **argv);
 static int cmd_cd(int argc, char **argv);
 static int cmd_ls(int argc, char **argv);
 static int cmd_cat(int argc, char **argv);
+static int cmd_dump(int argc, char **argv);
 static int cmd_echo(int argc, char **argv);
 static int cmd_mkdir(int argc, char **argv);
 static int cmd_rmdir(int argc, char **argv);
@@ -62,6 +63,7 @@ const command_type command_table[] = {
 	{"cd",      cmd_cd},
 	{"ls",      cmd_ls},
 	{"cat",     cmd_cat},
+	{"dump",    cmd_dump},
 	{"echo",    cmd_echo},
 	{"mkdir",   cmd_mkdir},
 	{"rmdir",   cmd_rmdir},
@@ -311,6 +313,67 @@ static int cmd_cat(int argc, char **argv)
 	fclose(fid);
 	return 0;
 }
+
+
+
+
+/*
+ * ファイルのDUMP
+ */
+static int cmd_dump(int argc, char **argv)
+{
+	FILE *fid;
+	int  c, i = 0, no= 0;
+	char buf[68];
+
+	if(argc < 2){
+		fwrite(noargment, sizeof(noargment), 1, stderr);
+		return -1;
+	}
+	mkpath(argv[1], fname);
+	fid = fopen(fname, "rb");
+	if(fid == NULL){
+		fwrite(nofile, sizeof(nofile), 1, stderr);
+		return -1;
+	}
+	while((c = fgetc(fid)) >= 0){
+#if 1
+		buf[i*3]   = make_hex((c>>4) % 0xf);
+		buf[i*3+1] = make_hex(c & 0xf);
+		buf[i*3+2] = ' ';
+		if(c >= ' ' && c < 0x7f)
+			buf[i+49] = c;
+		else
+			buf[i+49] = '.';
+		i++;
+		no++;
+
+		sprintf(buf, "%s\n", buf);
+#else
+		buf[65] = 0;
+		buf[i*3]   = make_hex((c>>4) % 0xf);
+		buf[i*3+1] = make_hex(c & 0xf);
+		buf[i*3+2] = ' ';
+		if(c >= ' ' && c < 0x7f)
+			buf[i+49] = c;
+		else
+			buf[i+49] = '.';
+		no++;
+		i++;
+		if(i >= 16){
+			printf("\n%08x %s", no - 16, buf);
+			i = 0;
+		}
+#endif
+	}
+	if(i > 0)
+		printf("\n%08x %s\n", no - i, buf);
+
+	fclose(fid);
+	return 0;
+}
+
+
 
 /*
  *  エコーコマンド
