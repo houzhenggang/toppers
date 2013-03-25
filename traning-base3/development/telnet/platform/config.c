@@ -82,7 +82,7 @@ void cyclic_handler(VP_INT exinf)
 void
 macaddr_init(VP_INT exinf)
 {
-	static const UB macaddr[LPC_ETHER_ADDR_LEN] = {0x00, 0x12, 0xCB, 0x01, 0x88, 0xE1};
+	static const UB macaddr[LPC_ETHER_ADDR_LEN] = {0x00, 0x12, 0xCB, 0x01, 0x88, 0xE3};
 	memcpy(lp23xx_macaddr, macaddr, LPC_ETHER_ADDR_LEN);
 }
 
