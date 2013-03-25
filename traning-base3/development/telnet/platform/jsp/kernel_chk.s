@@ -1,0 +1,130 @@
+	.code	16
+	.file	"kernel_chk.c"
+	.text
+	.align	2
+	.global	checker_function
+	.code 16
+	.thumb_func
+	.type	checker_function, %function
+checker_function:
+	@ lr needed for prologue
+	sTMAX_TPRI,(#16),(0)@
+	sTMIN_TPRI,(#1),(0)@
+	sTMAX_MPRI,(#16),(0)@
+	sTMIN_MPRI,(#1),(0)@
+	sTMAX_RELTIM,(#2147483647),(0)@
+	squeue::next,(#4),(#0)@
+	squeue::prev,(#4),(#4)@
+	dtask_6,ETHER_INPUT_TASK@
+	dtask_5,ETHER_OUTPUT_TASK@
+	dtask_9,LOGTASK@
+	dtask_1,MAIN_TASK@
+	dtask_3,MONTASK@
+	dtask_4,NET_TIMER_TASK@
+	dtask_7,TCP_OUTPUT_TASK@
+	dtask_2,TCP_TELNET_SRV_TASK@
+	dtask_8,UDP_OUTPUT_TASK@
+	s_kernel_tmax_tskid,(#4),(0)@
+	s_kernel_tinib_table,(#32),(0)@
+	stask_initialization_block::tskatr,(#4),(#0)@
+	stask_initialization_block::exinf,(#4),(#4)@
+	stask_initialization_block::task,(#4),(#8)@
+	stask_initialization_block::ipriority,(#4),(#12)@
+	stask_initialization_block::stksz,(#4),(#16)@
+	stask_initialization_block::stk,(#4),(#20)@
+	stask_initialization_block::texatr,(#4),(#24)@
+	stask_initialization_block::texrtn,(#4),(#28)@
+	dsemaphore_24,RTCSEM@
+	dsemaphore_19,SEMID_FATFS1@
+	dsemaphore_20,SEMID_FATFS2@
+	dsemaphore_21,SEMID_FATFS3@
+	dsemaphore_22,SEMID_FATFS4@
+	dsemaphore_11,SEM_ARP_CACHE_LOCK@
+	dsemaphore_7,SEM_CALL_OUT_LOCK@
+	dsemaphore_8,SEM_CALL_OUT_TIMEOUT@
+	dsemaphore_6,SEM_IF_EMAC_RBUF_READY@
+	dsemaphore_5,SEM_IF_EMAC_SBUF_READY@
+	dsemaphore_12,SEM_IN_ROUTING_TBL@
+	dsemaphore_9,SEM_IP2STR_BUFF_LOCK@
+	dsemaphore_10,SEM_MAC2STR_BUFF_LOCK@
+	dsemaphore_23,SEM_STDFILE@
+	dsemaphore_14,SEM_TCP_CEP@
+	dsemaphore_17,SEM_TCP_CEP_LOCK1@
+	dsemaphore_13,SEM_TCP_POST_OUTPUT@
+	dsemaphore_4,SEM_TCP_TELNET_QUEUE_LOCK@
+	dsemaphore_1,SEM_TCP_TELNET_SRV_NBLK_READY@
+	dsemaphore_2,SEM_TCP_TELNET_SRV_NRCV_READY@
+	dsemaphore_3,SEM_TCP_TELNET_SRV_NSND_READY@
+	dsemaphore_16,SEM_UDP_CEP@
+	dsemaphore_18,SEM_UDP_CEP_LOCK1@
+	dsemaphore_15,SEM_UDP_POST_OUTPUT@
+	dsemaphore_25,SERIAL_RCV_SEM1@
+	dsemaphore_27,SERIAL_RCV_SEM2@
+	dsemaphore_26,SERIAL_SND_SEM1@
+	dsemaphore_28,SERIAL_SND_SEM2@
+	s_kernel_tmax_semid,(#4),(0)@
+	s_kernel_seminib_table,(#12),(0)@
+	ssemaphore_initialization_block::sematr,(#4),(#0)@
+	ssemaphore_initialization_block::isemcnt,(#4),(#4)@
+	ssemaphore_initialization_block::maxsem,(#4),(#8)@
+	deventflag_1,FLG_TCP_CEP_EST1@
+	deventflag_3,FLG_TCP_CEP_RCV1@
+	deventflag_2,FLG_TCP_CEP_SND1@
+	s_kernel_tmax_flgid,(#4),(0)@
+	s_kernel_flginib_table,(#8),(0)@
+	seventflag_initialization_block::flgatr,(#4),(#0)@
+	seventflag_initialization_block::iflgptn,(#4),(#4)@
+	ddataqueue_1,DTQ_ETHER_OUTPUT@
+	ddataqueue_2,DTQ_UDP_RCVQ1@
+	s_kernel_tmax_dtqid,(#4),(0)@
+	s_kernel_dtqinib_table,(#12),(0)@
+	sdataqueue_initialization_block::dtqatr,(#4),(#0)@
+	sdataqueue_initialization_block::dtqcnt,(#4),(#4)@
+	sdataqueue_initialization_block::dtq,(#4),(#8)@
+	s_kernel_tmax_mbxid,(#4),(0)@
+	s_kernel_mbxinib_table,(#8),(0)@
+	smailbox_initialization_block::mbxatr,(#4),(#0)@
+	smailbox_initialization_block::maxmpri,(#4),(#4)@
+	dmempfix_5,MPF_NET_BUF_1024@
+	dmempfix_2,MPF_NET_BUF_128@
+	dmempfix_3,MPF_NET_BUF_256@
+	dmempfix_4,MPF_NET_BUF_512@
+	dmempfix_1,MPF_NET_BUF_64@
+	dmempfix_6,MPF_NET_BUF_IF_PDU@
+	s_kernel_tmax_mpfid,(#4),(0)@
+	s_kernel_mpfinib_table,(#16),(0)@
+	sfixed_memorypool_initialization_block::mpfatr,(#4),(#0)@
+	sfixed_memorypool_initialization_block::blksz,(#4),(#4)@
+	sfixed_memorypool_initialization_block::mpf,(#4),(#8)@
+	sfixed_memorypool_initialization_block::limit,(#4),(#12)@
+	dcyclic_1,CYCHDR1@
+	dcyclic_2,NET_TIMER_HANDLER@
+	s_kernel_tmax_cycid,(#4),(0)@
+	s_kernel_cycinib_table,(#20),(0)@
+	scyclic_handler_initialization_block::cycatr,(#4),(#0)@
+	scyclic_handler_initialization_block::exinf,(#4),(#4)@
+	scyclic_handler_initialization_block::cychdr,(#4),(#8)@
+	scyclic_handler_initialization_block::cyctim,(#4),(#12)@
+	scyclic_handler_initialization_block::cycphs,(#4),(#16)@
+	dinterrupt_0,13@
+	dinterrupt_1,21@
+	dinterrupt_2,24@
+	dinterrupt_3,25@
+	dinterrupt_4,4@
+	dinterrupt_5,INHNO_SIO0@
+	dinterrupt_6,INHNO_SIO1@
+	s_kernel_tnum_inhno,(#4),(0)@
+	s_kernel_inhinib_table,(#12),(0)@
+	sinterrupt_handler_initialization_block::inhno,(#4),(#0)@
+	sinterrupt_handler_initialization_block::inhatr,(#4),(#4)@
+	sinterrupt_handler_initialization_block::inthdr,(#4),(#8)@
+	s_kernel_tnum_excno,(#4),(0)@
+	s_kernel_excinib_table,(#12),(0)@
+	scpu_exception_handler_initialization_block::excno,(#4),(#0)@
+	scpu_exception_handler_initialization_block::excatr,(#4),(#4)@
+	scpu_exception_handler_initialization_block::exchdr,(#4),(#8)@
+	.code	16
+	@ sp needed for prologue
+	bx	lr
+	.size	checker_function, .-checker_function
+	.ident	"GCC: (GNU) 4.0.2"
