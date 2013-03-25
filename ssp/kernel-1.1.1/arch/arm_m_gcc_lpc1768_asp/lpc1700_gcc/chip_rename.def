@@ -1,0 +1,6 @@
+INCLUDE	"arm_m_gcc/common/core"
+
+chip_initialize
+initPLL0
+chip_exit
+chip_fput_log

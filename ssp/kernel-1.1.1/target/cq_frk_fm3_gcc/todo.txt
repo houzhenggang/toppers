@@ -1,0 +1,134 @@
+
+1. targetディレクトリの作成
+
+2．ターゲットボードに依存したマクロ名やファイル名の修正
+2-1. レジスタ定義
+2-2. マクロ
+cq_frk_fm3.h
+
+TYPE2製品
+
+144MHzまで
+元周4MHz
+
+PLLK = 1 , PLLN = 36 , PLLM = 2
+
+クロック構成
+
+
+
+メモリ　1MByte Flash、0番地～ Systemバス
+　　　　0x1ff80000、SRAM0 I-Code , D-Code、DMAC、バスマスタ 64KByte
+                    カーネルデータはSRAM0に置く
+　　　　0x20000000、SRAM1 Systemバス 64KByte
+　　　　　　　　　　　アプリデータはSRAM1に置く？
+
+エンディアン、リトル
+
+割込みは計53要因まで(周辺割込みは48個）
+優先度マスクは4bit、16段階
+
+
+バス構成
+APB0-2
+TRACE
+
+クロック
+
+初期：高速CRモード
+
+マスタクロック X0
+ベースクロック FCLK/HLCK 144MHz
+APB0 PCLK0 144MHz / 8 = 16MHz
+APB1 PCLK1 144MHz / 8 = 16MHz
+APB2 PCLK2 144MHz / 8 = 16MHz
+SysTickクロック 144MHz / 8 = 16MHz
+
+
+クリスタル => PLL => マスタクロック選択 => マスタクロック分周 => FCLK
+(メインクロック)          (1分周)               => PCLK0分周 => PCLK0
+                                                => PCLK1分周 => PCLK1
+                                                => PCL2K分周 => PCLK2
+
+
+PLL クロック発振安定待ち時間設定レジスタ(PSW_TMR)により、以下の設定を行います。
+- PLL の入力クロック選択
+- メインPLL クロックの安定待ち時間の設定
+- システムクロックモード制御レジスタ(SCM_CTL)の「PLL 発振許可ビット」をイネーブルにす
+ることで、PLL 回路が発振を開始します。
+- PLL クロック安定待ち時間経過後、システムクロックモード状態レジスタ(SCM_STR)の「PLL
+発振安定ビット」が安定状態を示すことでメインPLL クロックモードへの遷移準備が完了しま
+す。
+- システムクロックモード制御レジスタ(SCM_CTL)の「マスタクロック切換え制御ビット」をメ
+インPLL クロックモードに設定することで、メインPLL クロックモードへと遷移します。
+
+
+割込み番号定義
+
+3. カーネル本体のターゲット依存部作成
+3-1. 割込み
+
+target_kernel.h
+target_config.h/c
+
+3-2. タイマ
+target_timer.h/c/cfg
+
+systick
+
+3-3. メモリマップ
+ldスクリプト
+
+4. システムライブラリのターゲット依存部作成
+4-1. シリアル
+
+target_serial.c/h/cfg
+target_config.h/c
+
+クロックはAPB2
+
+非同期シリアルモード(MD2-MD0:0)で使用
+SCR：送受信割込み，送受信許可
+SMR：ストップビット，LSB/MSBファースト，SOE（送信データ出力許可）
+SSR：受信あり，送信データなしのステータス
+ESCR：データ長
+RDR：受信データ
+TDR：送信データ
+BGR0,1：ボーレート
+FCR：FIFOは使用しない
+
+(16MHzクロックの場合)
+115200：BCR=138
+57600：BCR=277
+38400：BCR=416
+
+チャンネルは0か4，0を使用？
+
+4. SILの修正
+
+target_sil.h
+
+5. その他
+
+target_rename.def
+MANIFEST
+
+target_config.h
+
+LEDはPF3，5Vプルアップ接続
+
+6. ビルド関連
+
+Makefile.tarfget
+target.tf
+target_check.tf
+target_cfg1_out.h
+
+7. サンプルプログラムのターゲット依存部修正
+
+target_test.h
+
+7. ドキュメント
+
+target_user.txt
+
