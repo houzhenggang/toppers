@@ -1,0 +1,1430 @@
+cfg1_out.c: sample1.cfg ../../syssvc/banner.cfg ../../syssvc/logtask.cfg ../../syssvc/serial.cfg ../../syssvc/syslog.cfg ../../target/at91skyeye_gcc/target_ipi.cfg ../../target/at91skyeye_gcc/target_serial.cfg ../../target/at91skyeye_gcc/target_timer.cfg 
+cfg1_out.o: ../../kernel/interrupt.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../syssvc/logtask.h ../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	sample1.h ../../include/t_syslog.h \
+	../../target/at91skyeye_gcc/target_cfg1_out.h \
+	../../kernel/spin_lock.h ../../syssvc/logtask.cfg \
+	../../arch/arm_gcc/common/core_unrename.h \
+	../../kernel/pridataq.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../syssvc/syslog.h ../../kernel/cyclic.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../kernel/exception.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_syssvc.h \
+	../../target/at91skyeye_gcc/target_timer.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	../../include/kernel_fncode.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../kernel/mailbox.h \
+	../../target/at91skyeye_gcc/target_serial.cfg \
+	../../arch/gcc/tool_stddef.h \
+	../../arch/arm_gcc/common/core_cfg1_out.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h sample1.cfg \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	cfg1_out.c ../../target/at91skyeye_gcc/target_ipi.h \
+	../../target/at91skyeye_gcc/target_timer.cfg \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../kernel/pcb.h ../../kernel/semaphore.h \
+	../../kernel/kernel_unrename.h ../../syssvc/banner.h \
+	../../kernel/task.h ../../kernel/allfunc.h \
+	../../syssvc/serial.cfg \
+	../../target/at91skyeye_gcc/target_ipi.cfg \
+	../../arch/arm_gcc/common/core_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../syssvc/banner.cfg ../../kernel/eventflag.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../kernel/kernel_int.h ../../syssvc/serial.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../syssvc/syslog.cfg ../../kernel/kernel_impl.h \
+	../../kernel/dataqueue.h ../../include/sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/t_stddef.h ../../arch/arm_gcc/common/arm.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../target/at91skyeye_gcc/target_serial.h \
+	../../kernel/mempfix.h \
+	../../target/at91skyeye_gcc/target_unrename.h \
+	../../arch/arm_gcc/common/core_pcb.h ../../kernel/mp.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+makeoffset.s: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../arch/arm_gcc/common/core_makeoffset.c \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../target/at91skyeye_gcc/makeoffset.c \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	../../include/kernel_fncode.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+target_support.o: ../../target/at91skyeye_gcc/target_asm.inc \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../include/kernel.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	../../kernel/kernel_impl.h ../../include/kernel_fncode.h \
+	../../include/t_syslog.h ../../kernel/allfunc.h \
+	../../include/sil.h ../../arch/gcc/tool_stddef.h ./offset.h \
+	../../arch/arm_gcc/common/arm.h ../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/kernel_rename.h \
+	../../arch/logtrace/trace_config.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/target_support.S \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	../../arch/arm_gcc/common/core_pcb.h \
+	../../target/at91skyeye_gcc/target_sil.h 
+core_support.o: ../../target/at91skyeye_gcc/target_asm.inc \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../arch/arm_gcc/common/core_support.S \
+	../../include/kernel.h ../../arch/arm_gcc/common/core_sil.h \
+	../../kernel/kernel_impl.h ../../include/kernel_fncode.h \
+	../../include/t_syslog.h ../../kernel/allfunc.h \
+	../../include/sil.h ../../arch/gcc/tool_stddef.h ./offset.h \
+	../../arch/arm_gcc/common/arm.h ../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/kernel_rename.h \
+	../../arch/logtrace/trace_config.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	../../arch/arm_gcc/common/core_pcb.h \
+	../../target/at91skyeye_gcc/target_sil.h 
+target_config.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../target/at91skyeye_gcc/target_config.c \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/_types.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/_types.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/types.h \
+	../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/alloca.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stdarg.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/types.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/stdio.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/reent.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/lock.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/stdlib.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../target/at91skyeye_gcc/target_serial.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/stdlib.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/stdio.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/_default_types.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+target_timer.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h \
+	../../target/at91skyeye_gcc/target_timer.c \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/allfunc.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../target/at91skyeye_gcc/target_timer.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../target/at91skyeye_gcc/target_test.h \
+	../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+trace_config.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../arch/logtrace/trace_config.c \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+trace_dump.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../include/log_output.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../arch/logtrace/trace_dump.c \
+	../../kernel/winfo.h ../../kernel/kernel_rename.h \
+	../../include/queue.h ../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+core_config.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/core_config.c \
+	../../arch/arm_gcc/common/arm.h ../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+startup.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/spin_lock.h \
+	../../kernel/winfo.h ../../kernel/kernel_rename.h \
+	../../include/queue.h ../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../kernel/startup.c \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+task.o: /cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/spin_lock.h \
+	../../kernel/winfo.h ../../kernel/kernel_rename.h \
+	../../include/queue.h ../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h ../../kernel/task.c \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	../../kernel/wait.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+wait.o: /cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/wait.c \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	../../kernel/wait.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+time_event.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../kernel/time_event.c \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+task_manage.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../kernel/task_manage.c \
+	../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/spin_lock.h \
+	../../kernel/winfo.h ../../kernel/kernel_rename.h \
+	../../include/queue.h ../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	../../kernel/wait.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+task_sync.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../kernel/task_sync.c \
+	../../arch/arm_gcc/common/core_pcb.h ../../kernel/wait.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+semaphore.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/semaphore.h \
+	../../kernel/check.h ../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/semaphore.c \
+	../../kernel/winfo.h ../../kernel/kernel_rename.h \
+	../../include/queue.h ../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	../../kernel/wait.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+cyclic.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/spin_lock.h \
+	../../kernel/winfo.h ../../kernel/kernel_rename.h \
+	../../include/queue.h ../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/cyclic.c ../../kernel/mp.h \
+	../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+time_manage.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../target/at91skyeye_gcc/target_timer.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../kernel/time_manage.c \
+	../../arch/arm_gcc/common/arm.h ../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+task_except.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../kernel/task_except.c ../../include/t_syslog.h \
+	../../kernel/task.h ../../kernel/allfunc.h \
+	../../kernel/winfo.h ../../kernel/kernel_rename.h \
+	../../include/queue.h ../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+sys_manage.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h ../../kernel/sys_manage.c \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+interrupt.o: ../../kernel/interrupt.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/interrupt.c ../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+mp.o: /cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h ../../kernel/mp.c \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../target/at91skyeye_gcc/target_ipi.h ../../kernel/mp.h \
+	../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+spin_lock.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/spin_lock.h \
+	../../kernel/spin_lock.c ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+eventflag.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/eventflag.c ../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../kernel/eventflag.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	../../kernel/wait.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+alarm.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/spin_lock.h \
+	../../kernel/winfo.h ../../kernel/kernel_rename.h \
+	../../include/queue.h ../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../kernel/alarm.c ../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+mailbox.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h ../../kernel/mailbox.c \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../kernel/mailbox.h \
+	../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	../../kernel/wait.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+dataqueue.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../kernel/dataqueue.c \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	../../kernel/dataqueue.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	../../kernel/wait.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+mempfix.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../kernel/mempfix.c \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../kernel/mempfix.h ../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	../../kernel/wait.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+pridataq.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/check.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/pridataq.h \
+	../../kernel/winfo.h ../../kernel/kernel_rename.h \
+	../../include/queue.h ../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../kernel/pridataq.c \
+	../../arch/arm_gcc/common/core_pcb.h ../../kernel/wait.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+task_refer.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../kernel/task_refer.c ../../kernel/alarm.h \
+	../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../kernel/semaphore.h \
+	../../kernel/check.h ../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/pridataq.h \
+	../../kernel/winfo.h ../../kernel/kernel_rename.h \
+	../../include/queue.h ../../kernel/cyclic.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../kernel/eventflag.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	../../kernel/dataqueue.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../kernel/mailbox.h \
+	../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../kernel/mempfix.h ../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../kernel/mp.h ../../arch/arm_gcc/common/core_pcb.h \
+	../../kernel/wait.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+exception.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h ../../kernel/task.h \
+	../../kernel/allfunc.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../kernel/exception.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/kernel_fncode.h ../../kernel/exception.c \
+	../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/sil.h ../../arch/arm_gcc/common/arm.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../arch/arm_gcc/common/core_pcb.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+sample1.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../syssvc/serial.h ../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	sample1.h ../../arch/arm_gcc/common/core_sil.h \
+	../../include/t_syslog.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/sil.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	kernel_cfg.h ../../include/t_stdlib.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h sample1.c \
+	../../arch/arm_gcc/common/core_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../syssvc/syslog.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+target_serial.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../target/at91skyeye_gcc/target_syssvc.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	../../include/kernel_fncode.h ../../include/t_syslog.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/sil.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../target/at91skyeye_gcc/target_serial.h \
+	../../target/at91skyeye_gcc/target_serial.c \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+banner.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../target/at91skyeye_gcc/target_syssvc.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	../../include/kernel_fncode.h ../../include/t_syslog.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../syssvc/banner.c ../../include/sil.h \
+	../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+syslog.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../target/at91skyeye_gcc/target_syssvc.h \
+	../../include/log_output.h ../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	../../include/kernel_fncode.h ../../include/t_syslog.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/sil.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	./kernel_cfg.h ../../syssvc/syslog.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	../../syssvc/syslog.c \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+serial.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../syssvc/serial.h \
+	../../target/at91skyeye_gcc/target_syssvc.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	../../include/kernel_fncode.h ../../include/t_syslog.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/sil.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../target/at91skyeye_gcc/target_serial.h ./kernel_cfg.h \
+	../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	../../syssvc/serial.c \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+logtask.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../target/at91skyeye_gcc/target_syssvc.h \
+	../../syssvc/logtask.h ../../syssvc/serial.h \
+	../../include/log_output.h ../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../arch/arm_gcc/common/core_sil.h ../../syssvc/logtask.c \
+	../../include/kernel_fncode.h ../../include/t_syslog.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../include/sil.h ../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../arch/logtrace/trace_config.h ../../syssvc/syslog.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+log_output.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../library/log_output.c \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../include/t_syslog.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+vasyslog.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stdarg.h \
+	../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../syssvc/vasyslog.c \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+t_perror.o: \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	../../include/t_syslog.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/t_stddef.h ../../include/t_stdlib.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../library/t_perror.c \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+strerror.o: ../../include/t_stdlib.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../library/strerror.c \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+kernel_cfg.o: ../../kernel/interrupt.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../syssvc/logtask.h ../../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/machine/ieeefp.h \
+	kernel_cfg.c sample1.h ../../include/t_syslog.h \
+	../../kernel/spin_lock.h \
+	../../arch/arm_gcc/common/core_unrename.h \
+	../../kernel/pridataq.h ../../kernel/winfo.h \
+	../../kernel/kernel_rename.h ../../include/queue.h \
+	../../syssvc/syslog.h ../../kernel/cyclic.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	../../target/at91skyeye_gcc/target_sil.h \
+	../../kernel/exception.h \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_syssvc.h \
+	../../target/at91skyeye_gcc/target_timer.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	../../include/kernel_fncode.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/features.h \
+	../../kernel/mailbox.h ../../arch/gcc/tool_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/time_event.h ../../arch/logtrace/trace_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/newlib.h \
+	../../target/at91skyeye_gcc/target_ipi.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include/stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/_ansi.h \
+	../../kernel/alarm.h ../../arch/arm_gcc/common/core_rename.h \
+	../../kernel/pcb.h ../../kernel/semaphore.h \
+	../../kernel/kernel_unrename.h ../../syssvc/banner.h \
+	../../kernel/task.h ../../kernel/allfunc.h kernel_cfg.h \
+	../../arch/arm_gcc/common/core_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/limits.h \
+	../../kernel/eventflag.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../kernel/kernel_int.h ../../syssvc/serial.h \
+	../../arch/arm_gcc/common/core_insn.h \
+	../../kernel/kernel_impl.h ../../kernel/dataqueue.h \
+	../../include/sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/limits.h \
+	../../include/t_stddef.h ../../arch/arm_gcc/common/arm.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/include/sys/config.h \
+	../../target/at91skyeye_gcc/target_serial.h \
+	../../kernel/mempfix.h \
+	../../target/at91skyeye_gcc/target_unrename.h \
+	../../arch/arm_gcc/common/core_pcb.h ../../kernel/mp.h \
+	/cygdrive/c\\cygwin\\usr\\local\\sourceryg++lite\\bin\\../lib/gcc/arm-none-eabi/4.5.1/include-fixed/syslimits.h 
+start.o: ../../target/at91skyeye_gcc/target_asm.inc \
+	../../target/at91skyeye_gcc/target_stddef.h \
+	../../target/at91skyeye_gcc/target_config.h \
+	../../target/at91skyeye_gcc/target_pcb.h \
+	../../target/at91skyeye_gcc/target_kernel.h \
+	../../arch/arm_gcc/common/core_rename.h \
+	../../target/at91skyeye_gcc/target_rename.h \
+	../../kernel/pcb.h ../../include/kernel.h \
+	../../arch/arm_gcc/common/core_sil.h \
+	../../kernel/kernel_impl.h ../../include/kernel_fncode.h \
+	../../include/t_syslog.h ../../kernel/allfunc.h \
+	../../include/sil.h ../../arch/gcc/tool_stddef.h \
+	../../arch/arm_gcc/common/arm.h ../../include/t_stddef.h \
+	../../arch/arm_gcc/common/core_kernel.h \
+	../../arch/arm_gcc/common/core_stddef.h \
+	../../kernel/kernel_rename.h \
+	../../arch/logtrace/trace_config.h \
+	../../arch/arm_gcc/common/core_config.h \
+	../../target/at91skyeye_gcc/at91skyeye.h \
+	../../arch/arm_gcc/common/core_pcb.h \
+	../../target/at91skyeye_gcc/start.S \
+	../../target/at91skyeye_gcc/target_sil.h 
