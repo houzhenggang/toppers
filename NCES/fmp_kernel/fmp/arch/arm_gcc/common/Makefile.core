@@ -1,0 +1,28 @@
+#
+#  @(#) $Id: Makefile.core 2 2008-05-09 18:12:27Z ertl-honda $
+# 
+
+#
+#		Makefile のコア依存部（ARM用）
+#
+
+
+#
+#  コンパイルオプション
+#
+INCLUDES := $(INCLUDES) -I$(SRCDIR)/arch/$(PRC)_$(TOOL)/common
+LIBS := $(LIBS) -lgcc
+
+
+#
+#  カーネルに関する定義
+#
+KERNEL_DIR := $(KERNEL_DIR):$(SRCDIR)/arch/$(PRC)_$(TOOL)/common
+KERNEL_ASMOBJS := $(KERNEL_ASMOBJS) core_support.o
+KERNEL_COBJS := $(KERNEL_COBJS) core_config.o
+
+#
+#  依存関係の定義
+#
+kernel_cfg.timestamp: $(SRCDIR)/arch/$(PRC)_$(TOOL)/common/core.tf
+$(OBJFILE): $(SRCDIR)/arch/$(PRC)_$(TOOL)/common/core_check.tf
